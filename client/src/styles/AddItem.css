@@ -1,0 +1,77 @@
+.item-list-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+}
+
+.warehouse-select {
+  width: 100%;
+  max-width: 320px;
+  padding: 8px 12px;
+  margin-bottom: 25px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.no-items-msg {
+  font-size: 18px;
+  color: #888;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 18px;
+}
+
+.item-card {
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 18px 22px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  transition: box-shadow 0.2s ease;
+}
+
+.item-card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.item-name {
+  font-weight: 700;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #111;
+}
+
+.stock {
+  font-weight: 600;
+  color: #2a9d8f; /* приятный зелёный цвет для остатков */
+}
+
+.min-stock {
+  font-weight: 600;
+  color: #e76f51; /* красноватый для мин. остатка */
+}
+
+/* Опционально, если добавим кнопку
+.item-btn {
+  margin-top: 12px;
+  padding: 8px 14px;
+  background-color: #264653;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.item-btn:hover {
+  background-color: #2a9d8f;
+}
+*/
